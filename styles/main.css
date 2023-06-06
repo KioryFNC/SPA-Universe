@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color-bg: #E1E1E6;
+  --universe-color-bg: #8D8D99;
+  --header-color-bg: #C4C4CC;
+  --selectHeader-color-bg: #FFFFFF;
+  --hover-on-color: #02799D;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom -20% left 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  padding: 4rem 7rem;
+}
+
+body.home {
+  background-image: url(../images/mountains-universe-1.png);
+}
+
+body.universe {
+  background-image: url(../images/mountains-universe02.png);
+}
+
+body.explorer {
+  background-image: url(../images/mountains-universe-3.png);
+}
+
+header {
+  width: 100vw;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+header ul li a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  transition: 0.1s all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  color: var(--header-color-bg);
+}
+
+header ul li a:hover {
+  color: var(--selectHeader-color-bg);
+  text-shadow: 0 0 .7rem var(--selectHeader-color-bg);
+}
+
+body.home header ul li:nth-child(1) a {
+  color: var(--selectHeader-color-bg);
+  text-shadow: 0 0 .7rem var(--selectHeader-color-bg);
+}
+
+body.universe header ul li:nth-child(2) a {
+  color: var(--selectHeader-color-bg);
+  text-shadow: 0 0 .7rem var(--selectHeader-color-bg);
+}
+
+body.explorer header ul li:nth-child(3) a {
+  color: var(--selectHeader-color-bg);
+  text-shadow: 0 0 .7rem var(--selectHeader-color-bg);
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 4.8rem;
+  animation: downtop 800ms ease-in-out backwards reverse;
+  color: var(--text-color-bg);
+}
+
+#home a {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: .5rem;
+  outline: .2rem solid var(--selectHeader-color-bg);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: topdown 800ms ease-in-out backwards reverse;
+  cursor: pointer;
+  color: var(--selectHeader-color-bg);
+  padding: 1.2rem 3.2rem;
+  margin-top: 2.4rem;
+}
+
+#home a:hover {
+  background: var(--selectHeader-color-bg);
+  color: var(--hover-on-color);
+}
+
+#universe {
+  width: 100%;
+  margin-top: 18rem;
+  padding-left: 10rem;
+}
+
+#universe h1 {
+  font-size: 4.8rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: var(--text-color-bg)
+}
+
+#universe p {
+  width: 34%;
+  font-size: 1.8rem;
+  line-height: 160%;
+  margin-top: 1.6rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: var(--text-color-bg);
+}
+
+#explorer {
+  width: 100%;
+  margin-top: 18rem;
+  padding-left: 10rem;
+}
+
+#explorer h1 {
+  font-size: 4.8rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: var(--text-color-bg)
+}
+
+#explorer p {
+  width: 34%;
+  font-size: 1.8rem;
+  line-height: 160%;
+  margin-top: 1.6rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: var(--text-color-bg);
+}
+
+#erro {
+  width: 100vw;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+}
+
+#erro h1 {
+  font-size: 4rem;
+  color: var(--text-color-bg);
+}
+
+#erro img {
+  width: 200px;
+}
